@@ -37,7 +37,7 @@ void Int_LED_Off(uint16_t led)
 void Int_LED_Toggle(uint16_t led)
 {
     //判断当前LED状态
-    if (!GPIOA->IDR & led)
+    if (!(GPIOA->IDR & led))
         Int_LED_Off(led);
     else
         Int_LED_On(led);
