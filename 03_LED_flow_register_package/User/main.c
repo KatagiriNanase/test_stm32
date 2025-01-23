@@ -16,7 +16,7 @@ int main()
 	//ÒÀ´Î´ò¿ª
 	while (1)
 	{
-		for(i=0;i<3;++i)
+		for (i = 0;i < 3;++i)
 		{
 			Int_LED_On(leds[i]);
 			Com_Delay_ms(500);
