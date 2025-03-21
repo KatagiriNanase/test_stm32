@@ -34,8 +34,8 @@ int main()
             isMinus = 0;
             dutycycle = (dutycycle - 10 < 0) ? 0 : dutycycle - 10;
             Dri_TIM3_SetDutyCycle(dutycycle);
-            Dri_TIM5_SetDutyCycle(dutycycle);
+        /Dri_TIM5_SetDutyCycle(dutycycle);
         }
-
+        Com_Delay_ms(16);
     }
 }

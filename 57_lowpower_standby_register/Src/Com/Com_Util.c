@@ -16,7 +16,7 @@ void Com_Delay_us(uint16_t us)
     }
 
     //4.关闭定时器
-    //SysTick->CTRL &= ~SysTick_CTRL_ENABLE;
+    SysTick->CTRL &= ~SysTick_CTRL_ENABLE;
 }
 
 void Com_Delay_ms(uint16_t ms)
